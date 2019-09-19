@@ -11,11 +11,11 @@
 		8A9043052332D9FB00D22AE6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */; };
 		8AA488922332E88C00EE83D5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA488912332E88C00EE83D5 /* UIViewController.swift */; };
 		8AB118452332958400F2B2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB118442332958400F2B2AE /* AppDelegate.swift */; };
-		8AB118472332958400F2B2AE /* IlanlarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB118462332958400F2B2AE /* IlanlarViewController.swift */; };
-		8AB118492332958400F2B2AE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB118482332958400F2B2AE /* SecondViewController.swift */; };
 		8AB1184C2332958400F2B2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1184A2332958400F2B2AE /* Main.storyboard */; };
 		8AB1184E2332958A00F2B2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1184D2332958A00F2B2AE /* Assets.xcassets */; };
 		8AB118512332958A00F2B2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1184F2332958A00F2B2AE /* LaunchScreen.storyboard */; };
+		8ACBDF932333CC9800FF6485 /* IlanlarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */; };
+		8ACBDF962333E43000FF6485 /* ilanlarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF952333E43000FF6485 /* ilanlarModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +24,12 @@
 		8AA488912332E88C00EE83D5 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		8AB118412332958400F2B2AE /* EvArkadasim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvArkadasim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB118442332958400F2B2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AB118462332958400F2B2AE /* IlanlarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlanlarViewController.swift; sourceTree = "<group>"; };
-		8AB118482332958400F2B2AE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8AB1184B2332958400F2B2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AB1184D2332958A00F2B2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AB118502332958A00F2B2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AB118522332958A00F2B2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlanlarViewController.swift; sourceTree = "<group>"; };
+		8ACBDF952333E43000FF6485 /* ilanlarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanlarModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +48,7 @@
 			children = (
 				8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */,
 				8A120E312333829B0046DBD7 /* LoginViewController.swift */,
+				8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -79,17 +80,24 @@
 		8AB118432332958400F2B2AE /* EvArkadasim */ = {
 			isa = PBXGroup;
 			children = (
+				8ACBDF942333E3F600FF6485 /* Model */,
 				8AA4888E2332E78800EE83D5 /* Extensions */,
 				8A9043032332D9CD00D22AE6 /* Controller */,
 				8AB118442332958400F2B2AE /* AppDelegate.swift */,
-				8AB118462332958400F2B2AE /* IlanlarViewController.swift */,
-				8AB118482332958400F2B2AE /* SecondViewController.swift */,
 				8AB1184A2332958400F2B2AE /* Main.storyboard */,
 				8AB1184D2332958A00F2B2AE /* Assets.xcassets */,
 				8AB1184F2332958A00F2B2AE /* LaunchScreen.storyboard */,
 				8AB118522332958A00F2B2AE /* Info.plist */,
 			);
 			path = EvArkadasim;
+			sourceTree = "<group>";
+		};
+		8ACBDF942333E3F600FF6485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8ACBDF952333E43000FF6485 /* ilanlarModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A120E322333829B0046DBD7 /* LoginViewController.swift in Sources */,
-				8AB118492332958400F2B2AE /* SecondViewController.swift in Sources */,
+				8ACBDF962333E43000FF6485 /* ilanlarModel.swift in Sources */,
 				8AB118452332958400F2B2AE /* AppDelegate.swift in Sources */,
-				8AB118472332958400F2B2AE /* IlanlarViewController.swift in Sources */,
+				8ACBDF932333CC9800FF6485 /* IlanlarViewController.swift in Sources */,
 				8A9043052332D9FB00D22AE6 /* RegisterViewController.swift in Sources */,
 				8AA488922332E88C00EE83D5 /* UIViewController.swift in Sources */,
 			);
