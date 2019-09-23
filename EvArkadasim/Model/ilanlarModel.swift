@@ -11,4 +11,5 @@ import Foundation
 struct 	ilanContent:Codable {
     var baslik:String?
     var icerik:String?
+    var foto:String?
 }

@@ -13,7 +13,9 @@ let url = URL(string: myUrl)!
 let myData = try! Data(contentsOf: url)
 var jsonDecoder = JSONDecoder()
 
-class IlanlarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class IlanlarViewController: UIViewController{
+    
+    var items = [ilanContent]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,21 +27,50 @@ class IlanlarViewController: UIViewController, UITableViewDataSource, UITableVie
         //print(ilanlar?.count)
         
         let ilanlar = try? jsonDecoder.decode([ilanContent].self, from: myData)
+        self.items = ilanlar!
+        
+        var baslikArray = [String]()
+        var icerikArray = [String]()
+        var imageArray = [String]()
+        
+        guard let ilanCollection = ilanlar else { return }
+        
+        for ilan in ilanCollection {
+            
+            baslikArray.append(ilan.baslik!)
+            icerikArray.append(ilan.icerik!)
+            imageArray.append(ilan.foto ?? "http://www.emrebulut.com.tr/images/about-1.jpg")
+            
+        }
+        
+        print(items.count)
         
     }
     
-    
+}
+
+extension IlanlarViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ilanCell", for: indexPath)
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "ilanCell", for: indexPath)
         
         //cell.textLabel?.text = json[indexPath.row]["baslik"]
         
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ilanCell") as? ilanlarTableViewCell else { return UITableViewCell() }
+        
+        let model = self.items[indexPath.row]
+        
+        cell.configure(with: model)
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
     
 
