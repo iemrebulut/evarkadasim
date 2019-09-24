@@ -37,13 +37,21 @@ class IlanlarViewController: UIViewController{
         
         for ilan in ilanCollection {
             
-            baslikArray.append(ilan.baslik!)
-            icerikArray.append(ilan.icerik!)
-            imageArray.append(ilan.foto ?? "http://www.emrebulut.com.tr/images/about-1.jpg")
+            guard let itemBaslik = ilan.baslik else { return }
+            guard let itemIcerik = ilan.icerik else { return }
+            guard let itemImage = ilan.foto else { return }
+            
+            baslikArray.append(itemBaslik)
+            icerikArray.append(itemIcerik)
+            imageArray.append(itemImage)
+            
+            //baslikArray.append(ilan.baslik ?? "Boş Başlık")
+            //icerikArray.append(ilan.icerik ?? "Boş İçerik")
+            //imageArray.append(ilan.foto ?? "http://www.emrebulut.com.tr/images/about-1.jpg")
+            
+            
             
         }
-        
-        print(items.count)
         
     }
     
@@ -56,9 +64,6 @@ extension IlanlarViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "ilanCell", for: indexPath)
-        
-        //cell.textLabel?.text = json[indexPath.row]["baslik"]
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ilanCell") as? ilanlarTableViewCell else { return UITableViewCell() }
         

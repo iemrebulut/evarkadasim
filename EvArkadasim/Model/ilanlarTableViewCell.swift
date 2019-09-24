@@ -14,10 +14,12 @@ class ilanlarTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var baslikLabel: UILabel!
     
-     private var model: ilanContent?
+    @IBOutlet private weak var icerikLabel: UILabel!
+    
+    private var model: ilanContent?
      
      /*override func awakeFromNib() {
-        self.ilanImageView.image = UIImage(named: "http://www.emrebulut.com.tr/images/about.jpg")
+        self.ilanImageView.image = UIImage(named: "filli")
      }*/
      
      func configure(with model: ilanContent) {
@@ -26,8 +28,12 @@ class ilanlarTableViewCell: UITableViewCell {
         let imageData = try! Data(contentsOf: imageUrl!)
         
         self.ilanImageView.image = UIImage(data: imageData)
-        self.baslikLabel.text = model.baslik
+        
+        self.baslikLabel.text = model.baslik ?? "Boş"
+        self.icerikLabel.text = model.icerik ?? "Boş"
+        
         
         
      }
+    
 }

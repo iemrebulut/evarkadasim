@@ -17,6 +17,7 @@
 		8AB118512332958A00F2B2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1184F2332958A00F2B2AE /* LaunchScreen.storyboard */; };
 		8ACBDF932333CC9800FF6485 /* IlanlarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */; };
 		8ACBDF962333E43000FF6485 /* ilanlarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF952333E43000FF6485 /* ilanlarModel.swift */; };
+		8AE40BA6233AA6BE00867098 /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE40BA5233AA6BE00867098 /* imageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8AB118522332958A00F2B2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlanlarViewController.swift; sourceTree = "<group>"; };
 		8ACBDF952333E43000FF6485 /* ilanlarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanlarModel.swift; sourceTree = "<group>"; };
+		8AE40BA5233AA6BE00867098 /* imageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 				8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */,
 				8A120E312333829B0046DBD7 /* LoginViewController.swift */,
 				8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */,
+				8AE40BA5233AA6BE00867098 /* imageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				8A1DD0C62339593D002A26FB /* ilanlarTableViewCell.swift in Sources */,
 				8ACBDF932333CC9800FF6485 /* IlanlarViewController.swift in Sources */,
 				8A9043052332D9FB00D22AE6 /* RegisterViewController.swift in Sources */,
+				8AE40BA6233AA6BE00867098 /* imageViewController.swift in Sources */,
 				8AA488922332E88C00EE83D5 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
