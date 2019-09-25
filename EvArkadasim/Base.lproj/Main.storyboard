@@ -279,6 +279,30 @@
             </objects>
             <point key="canvasLocation" x="1660" y="446.62668665667172"/>
         </scene>
+        <!--Image Two View Controller-->
+        <scene sceneID="rV7-8r-P9P">
+            <objects>
+                <viewController id="VC2-pm-3R3" customClass="imageTwoViewController" customModule="EvArkadasim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="frk-UO-n0h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="image 2 TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-dX-bpz">
+                                <rect key="frame" x="166" y="271" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="S6M-Nq-qZ2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYu-D9-lJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556" y="446.62668665667172"/>
+        </scene>
         <!--Mesajlar-->
         <scene sceneID="8rG-zs-tui">
             <objects>
@@ -475,6 +499,7 @@
         <image name="user" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="fov-us-HNe"/>
         <segue reference="d2w-r3-wLf"/>
     </inferredMetricsTieBreakers>
 </document>

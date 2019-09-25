@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72A4C52726B09F49B7B161B7 /* Pods_EvArkadasim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313DED996639E6730749DF5C /* Pods_EvArkadasim.framework */; };
 		8A120E322333829B0046DBD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A120E312333829B0046DBD7 /* LoginViewController.swift */; };
 		8A1DD0C62339593D002A26FB /* ilanlarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1DD0C52339593D002A26FB /* ilanlarTableViewCell.swift */; };
 		8A9043052332D9FB00D22AE6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */; };
@@ -17,10 +18,12 @@
 		8AB118512332958A00F2B2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1184F2332958A00F2B2AE /* LaunchScreen.storyboard */; };
 		8ACBDF932333CC9800FF6485 /* IlanlarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */; };
 		8ACBDF962333E43000FF6485 /* ilanlarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF952333E43000FF6485 /* ilanlarModel.swift */; };
+		8ADBD3A5233BB5FA00965DBE /* imageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBD3A4233BB5FA00965DBE /* imageTwoViewController.swift */; };
 		8AE40BA6233AA6BE00867098 /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE40BA5233AA6BE00867098 /* imageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		313DED996639E6730749DF5C /* Pods_EvArkadasim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvArkadasim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A120E312333829B0046DBD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A1DD0C52339593D002A26FB /* ilanlarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanlarTableViewCell.swift; sourceTree = "<group>"; };
 		8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +36,10 @@
 		8AB118522332958A00F2B2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlanlarViewController.swift; sourceTree = "<group>"; };
 		8ACBDF952333E43000FF6485 /* ilanlarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanlarModel.swift; sourceTree = "<group>"; };
+		8ADBD3A4233BB5FA00965DBE /* imageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageTwoViewController.swift; sourceTree = "<group>"; };
 		8AE40BA5233AA6BE00867098 /* imageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
+		EE117C0A009D8366164B86A9 /* Pods-EvArkadasim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvArkadasim.debug.xcconfig"; path = "Target Support Files/Pods-EvArkadasim/Pods-EvArkadasim.debug.xcconfig"; sourceTree = "<group>"; };
+		EF399B59D8B3BD3680793A50 /* Pods-EvArkadasim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvArkadasim.release.xcconfig"; path = "Target Support Files/Pods-EvArkadasim/Pods-EvArkadasim.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A4C52726B09F49B7B161B7 /* Pods_EvArkadasim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CF2E906DCDE990C2C36F04B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE117C0A009D8366164B86A9 /* Pods-EvArkadasim.debug.xcconfig */,
+				EF399B59D8B3BD3680793A50 /* Pods-EvArkadasim.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8474982D4A5BEE5135CF29F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				313DED996639E6730749DF5C /* Pods_EvArkadasim.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A9043032332D9CD00D22AE6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +78,7 @@
 				8A120E312333829B0046DBD7 /* LoginViewController.swift */,
 				8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */,
 				8AE40BA5233AA6BE00867098 /* imageViewController.swift */,
+				8ADBD3A4233BB5FA00965DBE /* imageTwoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -71,6 +96,8 @@
 			children = (
 				8AB118432332958400F2B2AE /* EvArkadasim */,
 				8AB118422332958400F2B2AE /* Products */,
+				0CF2E906DCDE990C2C36F04B /* Pods */,
+				8474982D4A5BEE5135CF29F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AB118552332958A00F2B2AE /* Build configuration list for PBXNativeTarget "EvArkadasim" */;
 			buildPhases = (
+				14A03C1E81240C07C01325A3 /* [CP] Check Pods Manifest.lock */,
 				8AB1183D2332958400F2B2AE /* Sources */,
 				8AB1183E2332958400F2B2AE /* Frameworks */,
 				8AB1183F2332958400F2B2AE /* Resources */,
+				835E92CDA179837EC4A0AAA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +201,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14A03C1E81240C07C01325A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvArkadasim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835E92CDA179837EC4A0AAA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvArkadasim/Pods-EvArkadasim-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvArkadasim/Pods-EvArkadasim-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EvArkadasim/Pods-EvArkadasim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8AB1183D2332958400F2B2AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -179,6 +250,7 @@
 			files = (
 				8A120E322333829B0046DBD7 /* LoginViewController.swift in Sources */,
 				8ACBDF962333E43000FF6485 /* ilanlarModel.swift in Sources */,
+				8ADBD3A5233BB5FA00965DBE /* imageTwoViewController.swift in Sources */,
 				8AB118452332958400F2B2AE /* AppDelegate.swift in Sources */,
 				8A1DD0C62339593D002A26FB /* ilanlarTableViewCell.swift in Sources */,
 				8ACBDF932333CC9800FF6485 /* IlanlarViewController.swift in Sources */,
@@ -328,6 +400,7 @@
 		};
 		8AB118562332958A00F2B2AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE117C0A009D8366164B86A9 /* Pods-EvArkadasim.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -345,6 +418,7 @@
 		};
 		8AB118572332958A00F2B2AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF399B59D8B3BD3680793A50 /* Pods-EvArkadasim.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
