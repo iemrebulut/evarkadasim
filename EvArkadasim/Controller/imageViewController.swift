@@ -40,16 +40,16 @@ class imageViewController: UIViewController, UIImagePickerControllerDelegate, UI
         ]
         
         //Checking image place holder
-        //let image = #imageLiteral(resourceName: "placeholder-image")
+        let image = #imageLiteral(resourceName: "placeholder-image")
         guard let imageToUpload = self.myImageView.image else { return }
         
         print("İşlem Başlıyor")
         //Checking if image is not selected!!
-        if imageToUpload == nil
+        if self.myImageView.image == image
         {
             print("Foto Gelmedi")
             //self.hideActivityIndicator()
-            showAlert(title: "Error", message: "Make sure you choose an image!", actionOk: nil, actionCancel: "Tamam")
+            showAlert(title: "Hata!", message: "Bir görsel seçtiğinizden emin olun!", actionOk: nil, actionCancel: "Tamam")
             
         } else {
             print("Foto Geldi")
@@ -86,15 +86,15 @@ class imageViewController: UIViewController, UIImagePickerControllerDelegate, UI
                                     
                                     //self.hideActivityIndicator()
                                     print("Your Results are ====> ",result)
-                                    self.showAlert(title: "Data Upload", message: message, actionOk: nil, actionCancel: "Tamam")
+                                    self.showAlert(title: "Başarılı!", message: message, actionOk: nil, actionCancel: "Tamam")
                                     
                                     
-                                    //self.myImageView.image = #imageLiteral(resourceName: "placeholder-image")
+                                    self.myImageView.image = #imageLiteral(resourceName: "placeholder-image")
                                     print(2)
                                 }else{
                                     print(3)
                                     //self.hideActivityIndicator()
-                                    self.showAlert(title: "Error Uploading", message: message, actionOk: nil, actionCancel: "Tamam")
+                                    self.showAlert(title: "Yükleme Hatası", message: message, actionOk: nil, actionCancel: "Tamam")
                                 }
                             }
                             
@@ -106,26 +106,6 @@ class imageViewController: UIViewController, UIImagePickerControllerDelegate, UI
             }
         }
     }
-            
-            /*Alamofire.upload(multipartFormData:
-                {
-                    (multipartFormData) in
-                    
-                    multipartFormData.append(image.jpegData(compressionQuality: 0.75)!, withName: "image", fileName: self.generateBoundary(), mimeType: "image/jpeg")
-                    for (key, value) in params
-                    {
-                        multipartFormData.append((value as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
-                    }
-            }, to:url,headers:nil)
-            { (result) in
-                switch result {
-                case .success(let upload,_,_):
-                    upload.uploadProgress(closure: { (progress) in
-                        self.showActivityIndicator()
-                    })
-                }
-                
-            }*/
     
     @IBAction func selectPhotoButton(_ sender: Any) {
         myImagePicker.allowsEditing = true

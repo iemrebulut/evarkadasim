@@ -13,3 +13,8 @@ struct 	ilanContent:Codable {
     var icerik:String?
     var foto:String?
 }
+
+struct cityContent:Codable {
+    var id:String?
+    var adi:String?
+}

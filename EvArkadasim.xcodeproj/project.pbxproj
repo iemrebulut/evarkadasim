@@ -11,13 +11,16 @@
 		8A120E322333829B0046DBD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A120E312333829B0046DBD7 /* LoginViewController.swift */; };
 		8A1DD0C62339593D002A26FB /* ilanlarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1DD0C52339593D002A26FB /* ilanlarTableViewCell.swift */; };
 		8A9043052332D9FB00D22AE6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */; };
+		8A972C26233FE185008ED031 /* CitysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A972C25233FE185008ED031 /* CitysViewController.swift */; };
+		8A972C28233FE4A2008ED031 /* citysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A972C27233FE4A2008ED031 /* citysTableViewCell.swift */; };
+		8A972C2A23401D86008ED031 /* ilcelerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A972C2923401D86008ED031 /* ilcelerViewController.swift */; };
 		8AA488922332E88C00EE83D5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA488912332E88C00EE83D5 /* UIViewController.swift */; };
 		8AB118452332958400F2B2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB118442332958400F2B2AE /* AppDelegate.swift */; };
 		8AB1184C2332958400F2B2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1184A2332958400F2B2AE /* Main.storyboard */; };
 		8AB1184E2332958A00F2B2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1184D2332958A00F2B2AE /* Assets.xcassets */; };
 		8AB118512332958A00F2B2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1184F2332958A00F2B2AE /* LaunchScreen.storyboard */; };
 		8ACBDF932333CC9800FF6485 /* IlanlarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */; };
-		8ACBDF962333E43000FF6485 /* ilanlarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF952333E43000FF6485 /* ilanlarModel.swift */; };
+		8ACBDF962333E43000FF6485 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBDF952333E43000FF6485 /* model.swift */; };
 		8ADBD3A5233BB5FA00965DBE /* imageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBD3A4233BB5FA00965DBE /* imageTwoViewController.swift */; };
 		8AE40BA6233AA6BE00867098 /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE40BA5233AA6BE00867098 /* imageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +30,9 @@
 		8A120E312333829B0046DBD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A1DD0C52339593D002A26FB /* ilanlarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanlarTableViewCell.swift; sourceTree = "<group>"; };
 		8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8A972C25233FE185008ED031 /* CitysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitysViewController.swift; sourceTree = "<group>"; };
+		8A972C27233FE4A2008ED031 /* citysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = citysTableViewCell.swift; sourceTree = "<group>"; };
+		8A972C2923401D86008ED031 /* ilcelerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilcelerViewController.swift; sourceTree = "<group>"; };
 		8AA488912332E88C00EE83D5 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		8AB118412332958400F2B2AE /* EvArkadasim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvArkadasim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB118442332958400F2B2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +41,7 @@
 		8AB118502332958A00F2B2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AB118522332958A00F2B2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlanlarViewController.swift; sourceTree = "<group>"; };
-		8ACBDF952333E43000FF6485 /* ilanlarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanlarModel.swift; sourceTree = "<group>"; };
+		8ACBDF952333E43000FF6485 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		8ADBD3A4233BB5FA00965DBE /* imageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageTwoViewController.swift; sourceTree = "<group>"; };
 		8AE40BA5233AA6BE00867098 /* imageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
 		EE117C0A009D8366164B86A9 /* Pods-EvArkadasim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvArkadasim.debug.xcconfig"; path = "Target Support Files/Pods-EvArkadasim/Pods-EvArkadasim.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,8 +83,10 @@
 				8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */,
 				8A120E312333829B0046DBD7 /* LoginViewController.swift */,
 				8ACBDF922333CC9800FF6485 /* IlanlarViewController.swift */,
-				8AE40BA5233AA6BE00867098 /* imageViewController.swift */,
 				8ADBD3A4233BB5FA00965DBE /* imageTwoViewController.swift */,
+				8AE40BA5233AA6BE00867098 /* imageViewController.swift */,
+				8A972C25233FE185008ED031 /* CitysViewController.swift */,
+				8A972C2923401D86008ED031 /* ilcelerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,8 +135,9 @@
 		8ACBDF942333E3F600FF6485 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8ACBDF952333E43000FF6485 /* ilanlarModel.swift */,
+				8ACBDF952333E43000FF6485 /* model.swift */,
 				8A1DD0C52339593D002A26FB /* ilanlarTableViewCell.swift */,
+				8A972C27233FE4A2008ED031 /* citysTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,12 +258,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A120E322333829B0046DBD7 /* LoginViewController.swift in Sources */,
-				8ACBDF962333E43000FF6485 /* ilanlarModel.swift in Sources */,
+				8ACBDF962333E43000FF6485 /* model.swift in Sources */,
+				8A972C28233FE4A2008ED031 /* citysTableViewCell.swift in Sources */,
 				8ADBD3A5233BB5FA00965DBE /* imageTwoViewController.swift in Sources */,
 				8AB118452332958400F2B2AE /* AppDelegate.swift in Sources */,
+				8A972C2A23401D86008ED031 /* ilcelerViewController.swift in Sources */,
 				8A1DD0C62339593D002A26FB /* ilanlarTableViewCell.swift in Sources */,
 				8ACBDF932333CC9800FF6485 /* IlanlarViewController.swift in Sources */,
 				8A9043052332D9FB00D22AE6 /* RegisterViewController.swift in Sources */,
+				8A972C26233FE185008ED031 /* CitysViewController.swift in Sources */,
 				8AE40BA6233AA6BE00867098 /* imageViewController.swift in Sources */,
 				8AA488922332E88C00EE83D5 /* UIViewController.swift in Sources */,
 			);

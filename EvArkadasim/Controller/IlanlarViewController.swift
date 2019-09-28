@@ -7,13 +7,11 @@
 //
 
 import UIKit
-
-let myUrl = "http://www.emrebulut.com.tr/evarkadasim/ilanlar.php"
-let url = URL(string: myUrl)!
-let myData = try! Data(contentsOf: url)
-var jsonDecoder = JSONDecoder()
+import Alamofire
 
 class IlanlarViewController: UIViewController{
+    
+    @IBOutlet weak var tableView: UITableView!
     
     var items = [ilanContent]()
 
@@ -21,40 +19,16 @@ class IlanlarViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //let ilanlar = try? jsonDecoder.decode([Ilanlar].self, from: myData)
-        
-        //dump(ilanlar?.first)
-        //print(ilanlar?.count)
-        
-        let ilanlar = try? jsonDecoder.decode([ilanContent].self, from: myData)
-        self.items = ilanlar!
-        
-        var baslikArray = [String]()
-        var icerikArray = [String]()
-        var imageArray = [String]()
-        
-        guard let ilanCollection = ilanlar else { return }
-        
-        for ilan in ilanCollection {
-            
-            guard let itemBaslik = ilan.baslik else { return }
-            guard let itemIcerik = ilan.icerik else { return }
-            guard let itemImage = ilan.foto else { return }
-            
-            baslikArray.append(itemBaslik)
-            icerikArray.append(itemIcerik)
-            imageArray.append(itemImage)
-            
-            //baslikArray.append(ilan.baslik ?? "Boş Başlık")
-            //icerikArray.append(ilan.icerik ?? "Boş İçerik")
-            //imageArray.append(ilan.foto ?? "http://www.emrebulut.com.tr/images/about-1.jpg")
-            
-            
-            
+        Alamofire.request("http://www.emrebulut.com.tr/evarkadasim/ilanlar.php")
+            .responseJSON { response in
+                guard let json = response.data else { return }
+                let jsonDecoder = JSONDecoder()
+                let ilanlar = try? jsonDecoder.decode([ilanContent].self, from: json)
+                guard let ilanCollection = ilanlar else { return }
+                self.items = ilanCollection
+                self.tableView?.reloadData()
         }
-        
     }
-    
 }
 
 extension IlanlarViewController: UITableViewDataSource, UITableViewDelegate {
@@ -64,7 +38,6 @@ extension IlanlarViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ilanCell") as? ilanlarTableViewCell else { return UITableViewCell() }
         
         let model = self.items[indexPath.row]
