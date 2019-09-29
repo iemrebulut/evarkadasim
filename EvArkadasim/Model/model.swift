@@ -18,3 +18,8 @@ struct cityContent:Codable {
     var id:String?
     var adi:String?
 }
+
+struct ilcelerContent:Codable {
+    var id:String?
+    var adi:String?
+}

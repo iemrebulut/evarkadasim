@@ -20,6 +20,10 @@ class citysViewController: UIViewController {
 
         Alamofire.request("http://www.emrebulut.com.tr/evarkadasim/city_json.php")
             .responseJSON { response in
+                // Debug
+                // print("Response", response.result.value)
+                // print("Response", response.result)
+                
                 guard let json = response.data else { return }
               
                 let jsonDecoder = JSONDecoder()
@@ -51,14 +55,13 @@ extension citysViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*let model = self.items[indexPath.row]
-        let VC = ilcelerViewController(with: model)
+
         
-        self.navigationController?.pushViewController(VC, animated: true)*/
-        
-        print(123)
-        let VC = ilcelerViewController() 
-        self.navigationController?.pushViewController(VC, animated: true)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let VC = storyBoard.instantiateViewController(withIdentifier: "ilcelerVC") as! ilcelerViewController
+        VC.cityModel = self.items[indexPath.row] 
+        self.present(VC, animated: true, completion: nil)
+    
     }
     
 }
