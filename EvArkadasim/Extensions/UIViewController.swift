@@ -31,7 +31,12 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func checkboxSelect(sender: String){
-        print(sender)
+    func checkArray(arrayName: inout [String], arrayVal: String) -> Void{
+       // var arrayIsmi = arrayName
+        if arrayName.index(of: arrayVal) == nil {
+            arrayName.append(arrayVal)
+        } else {
+            arrayName.remove(at: arrayName.index(of: arrayVal)!)
+        }
     }
 }

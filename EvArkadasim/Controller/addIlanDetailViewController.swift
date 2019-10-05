@@ -19,6 +19,19 @@ class addIlanDetailViewController: UIViewController, UIPickerViewDataSource, UIP
     @IBOutlet weak var sacKurutmaMakCheckbox: BEMCheckBox!
     @IBOutlet weak var tvCheckbox: BEMCheckBox!
     
+    @IBOutlet weak var kediCheckbox: BEMCheckBox!
+    @IBOutlet weak var kopekCheckbox: BEMCheckBox!
+    @IBOutlet weak var balikCheckbox: BEMCheckBox!
+    @IBOutlet weak var kusCheckbox: BEMCheckBox!
+    @IBOutlet weak var hamsterCheckbox: BEMCheckBox!
+    @IBOutlet weak var tavsanCheckbox: BEMCheckBox!
+    @IBOutlet weak var kaplumbagaCheckbox: BEMCheckBox!
+    
+    @IBOutlet weak var otobusCheckbox: BEMCheckBox!
+    @IBOutlet weak var minibusCheckbox: BEMCheckBox!
+    @IBOutlet weak var metroCheckbox: BEMCheckBox!
+    @IBOutlet weak var tramvayCheckbox: BEMCheckBox!
+    
     @IBOutlet weak var ilanBaslikField: UITextField!
     @IBOutlet weak var bulunduguKatField: UITextField!
     @IBOutlet weak var odaSayisiField: UITextField!
@@ -29,9 +42,13 @@ class addIlanDetailViewController: UIViewController, UIPickerViewDataSource, UIP
     private let banyoSayisiData = ["1","2","3","4","5"]
     
     
-    var itemSelected = ""
+    private var itemSelected = ""
     
-    var icOzellikler = [String]()
+    private var icOzellikler = [String]()
+    
+    private var evcilHayvanlar = [String]()
+    
+    private var ulasimImkanlari = [String]()
     
     weak var pickerView: UIPickerView?
     
@@ -45,6 +62,19 @@ class addIlanDetailViewController: UIViewController, UIPickerViewDataSource, UIP
         klimaCheckbox.delegate = self
         sacKurutmaMakCheckbox.delegate = self
         tvCheckbox.delegate = self
+        
+        kediCheckbox.delegate = self
+        kopekCheckbox.delegate = self
+        balikCheckbox.delegate = self
+        kusCheckbox.delegate = self
+        hamsterCheckbox.delegate = self
+        tavsanCheckbox.delegate = self
+        kaplumbagaCheckbox.delegate = self
+        
+        otobusCheckbox.delegate = self
+        minibusCheckbox.delegate = self
+        metroCheckbox.delegate = self
+        tramvayCheckbox.delegate = self
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
 
@@ -69,21 +99,50 @@ class addIlanDetailViewController: UIViewController, UIPickerViewDataSource, UIP
     
     func didTap(_ checkBox: BEMCheckBox) {
         if checkBox.tag == 1 {
-            icOzellikler.append("Buzdolabı")
+            checkArray(arrayName: &icOzellikler, arrayVal: "Buzdolabı")
         } else if checkBox.tag == 2 {
-            icOzellikler.append("Bulaşık Makinesi")
+            checkArray(arrayName: &icOzellikler, arrayVal: "Bulaşık Makinesi")
         } else if checkBox.tag == 3 {
-            icOzellikler.append("Çamaşır Makinesi")
+            checkArray(arrayName: &icOzellikler, arrayVal: "Çamaşır Makinesi")
         } else if checkBox.tag == 4 {
-            icOzellikler.append("Fırın")
+            checkArray(arrayName: &icOzellikler, arrayVal: "Fırın")
         } else if checkBox.tag == 5 {
-            icOzellikler.append("Klima")
+            checkArray(arrayName: &icOzellikler, arrayVal: "Klima")
         } else if checkBox.tag == 6 {
-            icOzellikler.append("Saç Kurutma Makinesi")
+            checkArray(arrayName: &icOzellikler, arrayVal: "Saç Kurutma Makinesi")
         } else if checkBox.tag == 7 {
-            icOzellikler.append("TV")
+            checkArray(arrayName: &icOzellikler, arrayVal: "TV")
         }
-        print(icOzellikler)
+        
+        else if checkBox.tag == 10 {
+            checkArray(arrayName: &evcilHayvanlar, arrayVal: "Kedi")
+        } else if checkBox.tag == 11 {
+            checkArray(arrayName: &evcilHayvanlar, arrayVal: "Köpek")
+        } else if checkBox.tag == 12 {
+            checkArray(arrayName: &evcilHayvanlar, arrayVal: "Balık")
+        } else if checkBox.tag == 13 {
+            checkArray(arrayName: &evcilHayvanlar, arrayVal: "Kuş")
+        } else if checkBox.tag == 14 {
+            checkArray(arrayName: &evcilHayvanlar, arrayVal: "Hamster")
+        } else if checkBox.tag == 15 {
+            checkArray(arrayName: &evcilHayvanlar, arrayVal: "Tavşan")
+        } else if checkBox.tag == 16 {
+            checkArray(arrayName: &evcilHayvanlar, arrayVal: "Kaplumbağa")
+        }
+        
+        else if checkBox.tag == 20 {
+            checkArray(arrayName: &ulasimImkanlari, arrayVal: "Otobüs")
+        } else if checkBox.tag == 21 {
+            checkArray(arrayName: &ulasimImkanlari, arrayVal: "Minibüs")
+        } else if checkBox.tag == 22 {
+            checkArray(arrayName: &ulasimImkanlari, arrayVal: "Metro")
+        } else if checkBox.tag == 23 {
+            checkArray(arrayName: &ulasimImkanlari, arrayVal: "Tramvay")
+        }
+        
+        print("İç Özellikler: ",icOzellikler)
+        print("Evcil Hayvanlar:", evcilHayvanlar)
+        print("Ulaşım İmkanları:", ulasimImkanlari)
     }
     
     override func didReceiveMemoryWarning() {
