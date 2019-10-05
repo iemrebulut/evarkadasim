@@ -10,6 +10,8 @@
 		72A4C52726B09F49B7B161B7 /* Pods_EvArkadasim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313DED996639E6730749DF5C /* Pods_EvArkadasim.framework */; };
 		8A120E322333829B0046DBD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A120E312333829B0046DBD7 /* LoginViewController.swift */; };
 		8A1DD0C62339593D002A26FB /* ilanlarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1DD0C52339593D002A26FB /* ilanlarTableViewCell.swift */; };
+		8A8780F9234153E30026D4B5 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8780F8234153E30026D4B5 /* testViewController.swift */; };
+		8A8780FB23415CD40026D4B5 /* addIlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8780FA23415CD40026D4B5 /* addIlanDetailViewController.swift */; };
 		8A9043052332D9FB00D22AE6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */; };
 		8A972C26233FE185008ED031 /* CitysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A972C25233FE185008ED031 /* CitysViewController.swift */; };
 		8A972C28233FE4A2008ED031 /* citysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A972C27233FE4A2008ED031 /* citysTableViewCell.swift */; };
@@ -30,6 +32,8 @@
 		313DED996639E6730749DF5C /* Pods_EvArkadasim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvArkadasim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A120E312333829B0046DBD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A1DD0C52339593D002A26FB /* ilanlarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanlarTableViewCell.swift; sourceTree = "<group>"; };
+		8A8780F8234153E30026D4B5 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		8A8780FA23415CD40026D4B5 /* addIlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addIlanDetailViewController.swift; sourceTree = "<group>"; };
 		8A9043042332D9FB00D22AE6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8A972C25233FE185008ED031 /* CitysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitysViewController.swift; sourceTree = "<group>"; };
 		8A972C27233FE4A2008ED031 /* citysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = citysTableViewCell.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				8AE40BA5233AA6BE00867098 /* imageViewController.swift */,
 				8A972C25233FE185008ED031 /* CitysViewController.swift */,
 				8A972C2923401D86008ED031 /* ilcelerViewController.swift */,
+				8A8780F8234153E30026D4B5 /* testViewController.swift */,
+				8A8780FA23415CD40026D4B5 /* addIlanDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			files = (
 				8A120E322333829B0046DBD7 /* LoginViewController.swift in Sources */,
 				8ACBDF962333E43000FF6485 /* model.swift in Sources */,
+				8A8780F9234153E30026D4B5 /* testViewController.swift in Sources */,
 				8A972C28233FE4A2008ED031 /* citysTableViewCell.swift in Sources */,
 				8ADBD3A5233BB5FA00965DBE /* imageTwoViewController.swift in Sources */,
 				8AB118452332958400F2B2AE /* AppDelegate.swift in Sources */,
@@ -272,6 +279,7 @@
 				8A9043052332D9FB00D22AE6 /* RegisterViewController.swift in Sources */,
 				8A972C26233FE185008ED031 /* CitysViewController.swift in Sources */,
 				8AE40BA6233AA6BE00867098 /* imageViewController.swift in Sources */,
+				8A8780FB23415CD40026D4B5 /* addIlanDetailViewController.swift in Sources */,
 				8AA488922332E88C00EE83D5 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

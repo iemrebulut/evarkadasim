@@ -30,4 +30,8 @@ extension UIViewController {
         alert.addAction(actionCancel)
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func checkboxSelect(sender: String){
+        print(sender)
+    }
 }
